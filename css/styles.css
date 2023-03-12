@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 't';
+    src: url('../fonts/upheavtt.ttf');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 't';
+}
+
+.fondo {
+    background-image: url(../images/29625-pacman.png);
+    background-size: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+
+.pacmanmotion {
+    position: relative;
+    animation: pacman 15s infinite;
+    display: flex;
+}
+
+.titulos {
+    color: yellow;
+}
+
+video {
+    opacity: 0.2;
+    position: relative;
+}
+
+@keyframes pacman {
+    0%          {top: 29px; left: 0px; rotate: 0deg;}
+    5%          {top: 29px; left: 219px; rotate: 0deg;}
+    8%          {rotate: 90deg;}
+    10%         {top: 105px; left: 219px; rotate: 0deg;}
+    20%         {top: 105px; left: 615px; rotate: 0deg;}
+    22%, 25%    {rotate: 90deg;}
+    26%         {top: 162px; left: 615px; rotate: 90deg;}
+    27%, 30%    {rotate: 0deg;}
+    31%         {top: 162px; left: 615px; rotate: 0deg;}
+    32%, 35%    {rotate: 0deg;}
+    36%         {top: 162px; left: 670px; rotate: 90deg;}
+    37%, 38%    {top: 221px; left: 670px;}
+    39%         {top: 221px; left: 670px; rotate: 90deg;}
+    40%         {top: 221px; rotate: 90deg;}
+    41%         {rotate:0deg;}
+    42%         {top: 221px; left: 727px; rotate:0deg;}
+  }
+
+
+  /*ACA COLOCO MEDIAQUERIES*/
+  @media screen and (min-width: 900px) and (max-width: 1200px) {
+    body {
+        background-color: rgb(51, 28, 82);
+    }
+    .fondo {
+        background-image: url(../images/2.png);
+        background-size: cover;
+        width: 1200px;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+    @keyframes pacman {
+        0%  {top: 29px; left: 20px; rotate: 0deg;}
+        5%  {top: 29px; left: 105px; rotate: 0deg;}
+        10% {rotate: 0deg;}
+        12% {top: 29px; rotate: 0deg;}
+        15% {left: 105px; top: 29px; rotate: 90deg;}
+        17% {left: 105px; top: 29px; rotate: 90deg;}
+        20% {rotate: 90deg;}
+        23% {rotate: 90deg;}
+        25% {rotate: 90deg;}
+        30% {rotate: 90deg;}
+        33% {rotate: 90deg;}
+        35% {rotate: 90deg;}
+        40% {rotate: 90deg;}
+        43% {rotate: 90deg;}
+        45% {rotate: 0deg;}
+        47% {rotate: 0deg;}
+        50% {left: 105px; top: 265px; rotate: 0deg;}
+        55% {top: 268px; left: 157px; rotate: 0deg;}
+        60% {top: 268px; left: 157px; rotate: 90deg;}
+        63% {top: 268px; left: 157px; rotate: 0deg;}
+        65% {top: 268px; left: 157px; rotate: 0deg;}
+        68% {left: 157px; rotate: 90deg;}
+        70% {top: 322px; rotate: 0deg;}
+        73% {rotate: 0deg;}
+        75% {rotate: 0deg;}
+        85% {top: 322px; left: 265px; rotate: 360deg;}
+        87%  {top: 275px; rotate: 0deg;}
+        90%  {top: 275px; rotate: 0deg;}
+        93% {top: 275px; rotate: 0deg;}
+        95% {top:275px; left: 365px; rotate: 0deg;}
+    }
+}
+
+
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    body {
+        background-color: rgb(55, 63, 129);
+    }
+    .fondo {
+        background-image: url(../fonts/tablero2.jpg);
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        background-repeat: no-repeat;
+    
+    }
+    @keyframes pacman {
+        0%  {top: 0px; left: 0px; rotate: 0deg;}
+        10% {top: 50px; rotate: 0deg;}
+        15%  {top: 50px; left: 91px; rotate: 0deg;}
+        20%  {top: 97px; left: 91px; rotate: 0deg;} 
+        35% {left: 91px; top: 97px; rotate: 0deg;}
+        40% {top: 97px; rotate: 0deg;}
+        45% {top: 97px; left: 150px; rotate: 90deg;}
+        50% {top: 140px; rotate: 0deg;}
+        55%  {rotate: 0deg;}
+        60%  {top: 140px;rotate: 90deg;}
+        65% {top: 166px; left: 180px;rotate: 0deg;}
+        70% {top: 166px; left: 180px;rotate: 0deg;}
+        75% {top: 166px; left: 210px;rotate: 0deg;}
+        80% {top: 196px; left: 210px;rotate: 90deg; }
+        83% {top: 204px; left: 225px;rotate: 0deg; }
+        85% {top: 204px; left: 225px;rotate: 0deg; }
+        87% {top: 204px; left: 225px;rotate: 0deg; }
+        90% {top: 224px; left: 235px;rotate: 360deg; }
+    }
+}
+
+.centrar {
+    display: flex !important;
+    justify-content: center !important;
+}
